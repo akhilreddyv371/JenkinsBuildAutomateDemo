@@ -25,7 +25,7 @@ public class CalculatorTest {
     @Test
     public void testDivide() {
         Calculator calculator = new Calculator();
-        calculator.divide(1, 2);
+        calculator.divide(10, 2);
     }
 
 }
