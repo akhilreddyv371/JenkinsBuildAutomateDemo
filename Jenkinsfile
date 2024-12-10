@@ -8,6 +8,12 @@ pipeline {
     }
 
     stages {
+        stage("Checkout code"){
+            steps{
+                git url: "https://github.com/akhilreddyv371/JenkinsBuildAutomateDemo.git", branch: "Master"
+            }
+        }    
+        
         stage('Checkout Code') {
             steps {
                 echo 'Checking out the code...'
