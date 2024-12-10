@@ -4,7 +4,7 @@ pipeline {
     environment {
         SONARQUBE_SERVER = 'SonarQube' // Replace with your server name
         SONAR_PROJECT_KEY = 'JenkinsDemo'    // Replace with your project key
-        SONAR_AUTH_TOKEN = credentials('sqp_bfa40094593b8b44e48d06db10a993cbe9562354') // Replace with your credential ID
+        SONAR_AUTH_TOKEN = credentials('SonarQubeToken') // Replace with your credential ID
     }
 
     stages {
